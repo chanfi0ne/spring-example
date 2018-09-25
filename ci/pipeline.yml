@@ -1,0 +1,15 @@
+---
+resources:
+- name: git-resource
+  type: git
+  source:
+    uri: https://github.com/rwinch/concourse-gradle-sample.git
+
+jobs:
+- name: gradle-build
+  public: true
+  plan:
+  - get: git-resource
+    trigger: true
+  - task: build-app
+    file: git-resource/ci/tasks/build.yml
