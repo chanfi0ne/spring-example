@@ -3,7 +3,7 @@ resources:
 - name: git-resource
   type: git
   source:
-    uri: https://github.com/rwinch/concourse-gradle-sample.git
+    uri: https://github.com/sevatec-jon/spring-example.git
 
 jobs:
 - name: gradle-build
