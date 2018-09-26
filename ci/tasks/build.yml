@@ -11,4 +11,5 @@ inputs:
 run:
   user: root
   path: sh
-  args: ["git-resource/ci/tasks/build.sh"]
+  dir: git-resource
+  args: ["ci/tasks/build.sh"]
