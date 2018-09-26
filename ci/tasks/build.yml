@@ -9,5 +9,6 @@ inputs:
 - name: git-resource
 
 run:
+  user: root
   path: sh
   args: ["git-resource/ci/tasks/build.sh"]
